@@ -76,9 +76,9 @@ cityreader(cities)
 # TODO Get latitude and longitude values from the user
 
 location_one = input(
-    'Please enter first location [latitude] [longitude]').split(' ')
+    'Please enter first location [latitude] [longitude] ').split(' ')
 location_two = input(
-    'Please enter first location [latitude] [longitude]').split(' ')
+    'Please enter first location [latitude] [longitude] ').split(' ')
 
 lat_one = float(location_one[0])
 lon_one = float(location_one[1])
@@ -101,5 +101,4 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
     return within
 
 
-cityreader_stretch(float(lat_one), float(lon_one),
-                   float(lat_two), float(lon_two))
+cityreader_stretch(lat_one, lon_one, lat_two, lon_two)
